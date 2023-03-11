@@ -1,90 +1,73 @@
-/* Code Navbar CSS */
-.inline-block {
-  display: inline-block;
-  vertical-align: top;
-  color: rgb(0, 217, 255);
+body {
+  margin: 0;
 }
-.logo {
-  width: 90%;
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.img {
   padding: 1%;
-  background-image: url("../images/wow_no_logo.png");
+  background-image: url("../imagesjustin/mehlogo.png");
   height: 100px;
   background-position: center;
   background-repeat: no-repeat;
 }
-.nav {
-  width: 73%;
-  padding: 10px;
-  display: flex;
-  background-color: black;
-}
-.ul {
-  width: 50%;
-  margin-left: auto;
-}
-.navigation {
-  width: 100%;
-  display: flex;
-}
-
-/* Code Hero Image CSS */
 .heroImg {
-  height: 100%;
-  padding: 1px;
-  width: 100%;
-  position: static;
-  background-repeat: no-repeat;
-}
-.content {
-  width: 1000px;
-  margin: 0 auto;
-  position: center;
+  background-color: #ebebeb;
+  padding: 100px 15px;
 }
 .heroImg__image {
-  filter: drop-shadow(0 0 15px black);
+  filter: drop-shadow(0 0 15px rgb(0, 213, 255));
 }
-
-/* Code Footer CSS */
-.footer {
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+/* UX Skills using CSS Flex */
+.flexContainer {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  background: #373738;
-  height: 100px;
+  width: 33%;
+  padding: 5%;
+  flex-direction: row;
+}
+/* My Work using CSS Grid */
+.workGrid {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.footer a {
-  padding: 0px 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
+/*Footer CSS */
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
 }
-.ul {
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
   display: inline-block;
-  vertical-align: top;
+  padding: 0px 7px;
 }
-
-.ab {
-  color: rgb(255, 255, 255);
-}
-.sk {
-  color: rgb(255, 255, 255);
-}
-.wo {
-  color: rgb(255, 255, 255);
-}
-.co {
-  color: rgb(255, 255, 255);
-}
-
-body {
-  font-family: "Inter", sans-serif;
-}
-
-/* Notes 
-Nav background color isn't working.
-Nav text won't space.
-Image moves text and button too.
-HTML: "li class" doesn't work, but "a href = inlineblock " works
-Footer not all the way down.
-GitHub not working?
-*/
