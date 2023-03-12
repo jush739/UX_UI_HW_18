@@ -18,7 +18,7 @@ header p {
 }
 .img {
   padding: 1%;
-  background-image: url("../imagesjustin/mehlogo.png");
+  background-image: url("../imagesjustin/mylogo.png");
   height: 100px;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +55,7 @@ button {
 .workGrid {
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px;
 }
 
 /*Footer CSS */
@@ -70,4 +71,22 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .flexContainer > * {
+    width: 100%;
+  }
+}
+.workGrid {
+  grid-template: 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "project_one"
+    "project_two"
+    "project_three";
 }
