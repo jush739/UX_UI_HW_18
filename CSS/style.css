@@ -45,17 +45,93 @@ button {
   border-radius: 4px;
 }
 /* UX Skills using CSS Flex */
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .flexContainer {
   display: flex;
-  width: 33%;
-  padding: 5%;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.skillsImage {
+  display: block;
+  width: 100%;
+}
+
+.skillsDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsDescription .description {
+  text-align: center;
+}
+
 /* My Work using CSS Grid */
+.myWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionContent {
+  width: 80%;
+}
+
+.project {
+  padding-bottom: 2em;
+}
+
+.projectImage {
+  width: 100%;
+}
+
+.projectImage img {
+  width: 100%;
+  object-fit: cover;
+}
+.gridContainer {
+  height: 100%;
+}
 .workGrid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px;
+  column-gap: 3.333%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectDescription {
+  height: 60px;
+}
+
+.viewAllProjects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.viewAllProjects button {
+  background-color: #008676;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.viewAllProjects button:hover,
+.viewAllProjects button:active {
+  cursor: pointer;
+  background-color: #00bfa8;
 }
 
 /*Footer CSS */
@@ -74,19 +150,17 @@ footer li {
 }
 
 /* Mobile Media Query */
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
   .flexContainer {
     flex-direction: column;
+    align-items: center;
   }
   .flexContainer > * {
     width: 100%;
   }
-}
-.workGrid {
-  grid-template: 300px 300px 300px;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "project_one"
-    "project_two"
-    "project_three";
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
